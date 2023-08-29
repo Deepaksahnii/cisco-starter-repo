@@ -1,10 +1,10 @@
 import React from 'react'
 
 
-const Banner = () => {
+const Banner = (props) => {
   return (<>
       <div>
-          <h3>Sextant</h3>
+          <h3>{props.bannerText}</h3>
       </div>
       </>
   )

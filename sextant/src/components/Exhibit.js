@@ -1,21 +1,16 @@
 import React from 'react'
 
-const exhibit = () => {
-    return (<>
-        <div className="class">
-        <div className='exhibit'>
-          <h3>I am an exhibit</h3>
-    </div>
-      <div className='exhibit'>
-          <h3>I am an exhibit</h3>
-    </div>
-    <div className='exhibit'>
-          <h3>I am an exhibit</h3>
-      </div>
-      </div>
-      
-      </>
-  )
-}
 
-export default exhibit
+
+const exhibit = (props) => {
+    return (<>
+        <div className="exhibit-container">
+                <div className='exhibit'>
+                    <h3>{props.name}</h3>
+                    <p>{props.children}</p>
+                </div>
+            </div>
+        </>
+        )
+}
+   export default exhibit;
