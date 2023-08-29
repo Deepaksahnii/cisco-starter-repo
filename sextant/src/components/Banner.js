@@ -1,10 +1,12 @@
 import React from 'react'
 
+
 const Banner = () => {
-  return (
+  return (<>
       <div>
           <h3>Sextant</h3>
       </div>
+      </>
   )
 }
 
